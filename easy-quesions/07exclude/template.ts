@@ -1,6 +1,6 @@
 type MyExclude<T, U> = T extends U?never:T
 
-type a = Exclude<'a' | 'b' | 'c', 'a'>
+type a = MyExclude<'a' | 'b' | 'c', 'a'>
 
 // 条件类型
 // T extends U ? X : Y
